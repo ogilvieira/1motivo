@@ -10,20 +10,23 @@
  */
 
 ?>
-<hr>
-<div class="container">
-	<div class="col-lg-12">
-		<footer id="colophon" class="site-footer" role="contentinfo">
-			<div class="site-info">
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'mplsagc' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'mplsagc' ), 'WordPress' ); ?></a>
-				<span class="sep"> | </span>
-				<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'mplsagc' ), 'mplsagc', '<a href="http://maples.com.br/" rel="designer">Maples</a>' ); ?>
-			</div><!-- .site-info -->
-		</footer><!-- #colophon -->
-
-		<?php wp_footer(); ?>
+</div><!-- /#content -->
+<?php include get_template_directory() . '/partial/keep-update.php'; ?>
+<footer id="colophon" role="contentinfo">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="site-info">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="brand">1motivo</a>
+					<p>
+						<a href="#">Politica de Privacidade</a> / <a href="#">Termos de uso</a><br>
+						Licença Creative Commons Atribuição 3.0 . (É obrigatório citar link com a fonte).
+					</p>
+				</div><!-- .site-info -->
+			</div>
+		</div>
 	</div>
-</div>
-
+</footer><!-- #colophon -->
+<?php wp_footer(); ?>
 </body>
 </html>

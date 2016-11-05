@@ -2,6 +2,12 @@ var mozjpeg = require('imagemin-mozjpeg');
 var themepath = 'public/wp-content/themes/mytheme/';
 
 module.exports = function(grunt) {
+
+  grunt.event.on('watch', function(action, filepath) {
+      grunt.config('default', filepath);
+  });
+
+
   var project_files = {
       javascript: [
         'bower_components/jquery/dist/jquery.js',
@@ -12,7 +18,7 @@ module.exports = function(grunt) {
       stylesheet: [
         'bower_components/bootstrap/dist/css/bootstrap.css',
         'bower_components/bootstrap/dist/css/bootstrap-theme.css',
-        'bower_components/font-awesome/css/font-awesome.css',
+        'bower_components/Ionicons/css/ionicons.css',
         'src/assets/css/**/*.css',
       ],
   };
@@ -74,11 +80,18 @@ module.exports = function(grunt) {
       build: [themepath]
     },
     copy: {
-      main: { 
+      main: {
         expand: true,
         cwd: 'src/',
         src: ['**', '!assets/css/**/*', '!assets/sass/**/*', '!assets/js/**/*', '!assets/img/**/*'],
         dest: themepath,
+        filter: 'isFile'
+      },
+      fonts: {
+        expand: true,
+        cwd: 'bower_components/Ionicons/fonts/',
+        src: ['**'],
+        dest: themepath+'assets/fonts/',
         filter: 'isFile'
       }
     },

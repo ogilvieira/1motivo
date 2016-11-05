@@ -1,0 +1,9 @@
+#content {
+  min-height: calc( 100vh - 280px );
+  background: white;
+  @include clearfix();
+}
+
+@media screen and (max-width: 991px){
+  #content { min-height: calc(100vh - 370px);}
+}
