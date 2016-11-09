@@ -11,6 +11,7 @@ module.exports = function(grunt) {
   var project_files = {
       javascript: [
         'bower_components/jquery/dist/jquery.js',
+        'bower_components/bootstrap/dist/js/bootstrap.js',
         'src/assets/js/modules/**/*.js',
         'src/assets/js/page/**/*.js',
         'src/assets/js/app.js',

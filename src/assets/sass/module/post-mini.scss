@@ -1,0 +1,78 @@
+#main .post-mini {
+  width: 100%;
+  padding: 20px 0;
+  @include clearfix();
+  border-bottom: 1px solid whitesmoke;
+  .cover {
+    width: 280px;
+    height: 180px;
+    background-color: #ccc;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    float: left;
+    position: relative;
+    span {
+      display: inline-block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 2;
+      color: white;
+      font-size: 14px;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,.3);
+      @include transition(.2s all linear);
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 40px;
+      @include background-image( linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,.5)) );
+    }
+    &:hover:before { background: rgba(0,0,0,0); }
+  }
+  .entry-header {
+    width: calc(100% - 280px);
+    float: left;
+    border-bottom: 0;
+    padding-left: 30px;
+    .cat {
+      font-size: 14px;
+      color: #c4c4c4;
+      text-transform: uppercase;
+    }
+    a { color: inherit; }
+    .entry-title {
+      color: #3a3a3a;
+      font-size: 28px;
+      padding: 0;
+      margin: 0;
+      font-weight: 700;
+    }
+  }
+}
+
+@media screen and (max-width: 719px){
+  #main .post-mini .cover {
+    width: 100%;
+    float: none;
+  }
+  #main .post-mini .entry-header {
+    width: 100%;
+    float: none;
+    padding: 10px 0;
+  }
+}

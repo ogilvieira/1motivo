@@ -7,7 +7,7 @@
     </div>
     <div class="row">
       <div class="col-sm-4">
-        <a href="#" target="_blank" class="btn">
+        <a href="http://eepurl.com/cnB9lj" target="_blank" class="btn">
           <span class="icon"><span class="ion ion-ios-email"></span></span>
           <span class="text">Newsletter</span>
         </a>

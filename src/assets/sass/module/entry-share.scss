@@ -1,0 +1,45 @@
+.entry-share {
+  display: block;
+  width: 100%;
+  @include clearfix();
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    margin-left: -5px;
+    display: block;
+    width: calc(100% + 5px);
+    overflow: hidden;
+    li {
+      width: 25%;
+      float: left;
+      display: block;
+      list-style: none;
+      padding-left: 5px;
+      vertical-align: top;
+      a {
+        display: block;
+        height: 40px;
+        background: #ccc;
+        color: white;
+        line-height: 40px;
+        text-align: center;
+        font-size: 22px;
+        border-radius: 3px;
+        width: 100%;
+        &:hover { opacity: .9; }
+      }
+      &.fb a { background: #3b5998; }
+      &.tw a { background: #1da1f2; }
+      &.ld a { background: #1985BC; }
+      &.gp a { background: #E04A39; }
+      &.wp a { background: #5BD066; }
+    }
+  }
+}
+
+@media screen and (max-width: 991px){
+  .entry-share ul li {
+    width: 20%;
+  }
+}

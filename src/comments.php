@@ -22,3 +22,20 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 </div>
+<hr>
+<div id="disqus_thread"></div>
+
+<script>
+var disqus_config = function () {
+this.page.url = "<?php echo (get_permalink()) ? get_permalink() : home_url();?>"
+this.page.identifier = "1motivo"
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = '//1motivo.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

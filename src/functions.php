@@ -13,6 +13,8 @@ require get_template_directory() . '/inc/resets.php';
  * Setup
  */
 require get_template_directory() . '/inc/setup.php';
+require get_template_directory() . '/inc/bootstrap-nav.php';
+require get_template_directory() . '/inc/custom-number-format.php';
 
 /**
  * Widgets

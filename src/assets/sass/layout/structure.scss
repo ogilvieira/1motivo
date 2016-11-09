@@ -13,3 +13,12 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 .alignright { float: right; }
 .alignleft { float: left; }
 .aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+.rpwwt-widget ul li img {
+  margin: 0 auto;
+}
+
+#rpwwt-recent-posts-widget-with-thumbnails-2 img {
+  height: auto;
+  max-width: 100%;
+}
