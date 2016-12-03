@@ -1,0 +1,9 @@
+.adwrap {
+  padding: 5px 0;
+  background: whitesmoke;
+  width: 100%;
+  text-align: center;
+  margin: 10px auto;
+  overflow: hidden;
+  @include clearfix();
+}

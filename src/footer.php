@@ -10,6 +10,7 @@
  */
 
 ?>
+
 </div><!-- /#content -->
 <?php include get_template_directory() . '/partial/keep-update.php'; ?>
 <footer id="colophon" role="contentinfo">

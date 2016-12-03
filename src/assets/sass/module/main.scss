@@ -12,6 +12,12 @@
       border-radius: 5px 5px 0 0;
       margin-top: 20px;
       overflow: hidden;
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }
       span {
         display: inline-block;
         position: absolute;
@@ -22,28 +28,6 @@
         font-size: 18px;
         font-weight: 700;
       }
-      &:before {
-        content: "";
-        display: block;
-        width: 100%;
-        padding-top: 40%;
-        height: 0;
-        background: rgba(0,0,0,.3);
-        @include transition(.2s all linear);
-        border-radius: 5px 5px 0 0;
-      }
-      &:after {
-        content: "";
-        position: absolute;
-        border-radius: 5px 5px 0 0;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        width: 100%;
-        height: 40px;
-        @include background-image( linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,.5)) );
-      }
-      &:hover:before { background: rgba(0,0,0,0); }
     }
     img {
       display: block;
@@ -61,13 +45,13 @@
       padding: 20px 15px;
       .cat {
         font-size: 14px;
-        color: #7d7d7d;
+        color: #21cfab;
         font-weight: bold;
         text-transform: uppercase;
       }
       .posted-on a {
         font-size: 14px;
-        color: #7d7d7d;
+        color: #727288;
         font-weight: bold;
       }
       .entry-title {
@@ -104,8 +88,9 @@
       h6,
       h5 {
         font-weight: 700;
-        margin-top: 2em;
+        margin-top: 1.2em;
         font-family: $font-primary;
+        color: $color-primary;
       }
       h1 { font-size: 3em; }
       h2 { font-size: 2.5em; }

@@ -46,4 +46,10 @@ get_header(); ?>
 		<?php get_sidebar(); ?>
 	</div>
 </div>
+<script>
+fbq('track', 'Search', {
+search_string: '<?php echo get_search_query(); ?>'
+});
+</script>
+
 <?php get_footer(); ?>

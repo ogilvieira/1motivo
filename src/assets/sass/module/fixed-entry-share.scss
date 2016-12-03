@@ -1,0 +1,26 @@
+@media screen and (max-width: 991px){
+	body.single-post {
+		padding-bottom: 70px;
+		.entry-share { display: none; }
+		#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-bottom-right {
+			bottom: 80px !important;
+		}
+	}
+	.fixed-entry-share {
+		width: 100%;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		z-index: 999;
+		padding: 0 10px;
+		background: white;
+		box-shadow: 0 0 5px rgba(0,0,0,.4);
+		.entry-share { 
+			display: block!important;
+			margin: 5px 0;
+			ul {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

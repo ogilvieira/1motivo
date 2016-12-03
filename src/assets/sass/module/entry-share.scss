@@ -1,11 +1,20 @@
 .entry-share {
   display: block;
   width: 100%;
+  margin: 10px 0;
   @include clearfix();
+  div {
+    font-size: 12px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: $font-primary;
+    i { color: $color-secondary; }
+    margin-bottom: 5px;
+  }
   ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0;
     margin-left: -5px;
     display: block;
     width: calc(100% + 5px);

@@ -1,0 +1,62 @@
+.newsletter-headerbar {
+	background-color: #1f1f2b;
+	padding: 15px 0;
+	@include clearfix();
+	width: 100%;
+	text-align: right;
+	.btn-facebook {
+		background-color: #3b5998;
+		border-radius: 3px;
+		color: white;
+		font-weight: bold;
+		float: left;
+	}
+	.warn {
+		display: inline-block;
+		line-height: 50px;
+		color: white;
+		padding-right: 11px;
+	}
+	.input-group {
+		width: 470px;
+		float: right;
+		.btn {
+			background-color: #21cfab;
+			color: white;
+			text-transform: uppercase;
+			border-radius: 3px;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+		.input-lg {
+			border-radius: 3px;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 1199px){
+	.newsletter-headerbar .input-group {
+		width: 360px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.newsletter-headerbar {
+		text-align: center;
+	}
+	.newsletter-headerbar .input-group {
+		width: 100%;
+		max-width: 360px;
+		margin: 0 auto;
+		float: none;
+	}
+	.newsletter-headerbar .warn {
+		display: block;
+		line-height: 21px;
+		margin-bottom: 10px;
+		padding: 0;
+		float: none;
+	}
+}
